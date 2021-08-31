@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+      <MenuButton mnemonicParsing="false" style="-fx-background-color: none;" text="Sort By">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Price" />
+            <MenuItem mnemonicParsing="false" text="Host Name" />
+            <Menu mnemonicParsing="false" text="Reviews">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Reviews" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Price">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Host Name">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </items>
+         <VBox.margin>
+            <Insets top="12.0" />
+         </VBox.margin>
+      </MenuButton>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox style="-fx-background-color: white;">
+               <children>
+                  <VBox fillWidth="false" focusTraversable="true" onMouseClicked="#propertyClicked" spacing="15.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);;" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <Label text="Name property" />
+                        <Label text=" Number of reviews per property. " />
+                        <Label text=" Price of the property. " />
+                        <Label text="max night" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="10.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" fillWidth="false" onMouseClicked="#propertyClicked" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0); -fx-background-color: white;" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <Label text="Label" />
+                        <Label text="Label" />
+                        <Label text="Label" />
+                        <Label text="Label" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+  </children>
+</VBox>

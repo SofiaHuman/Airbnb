@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScene">
+   <bottom>
+      <AnchorPane prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backwardButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#backwardPressed" prefHeight="29.0" prefWidth="41.0" text="&lt;" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="forwardButton" alignment="CENTER" contentDisplay="CENTER" layoutX="531.0" layoutY="6.0" mnemonicParsing="false" onAction="#forwardPressed" prefHeight="30.0" prefWidth="40.0" text="&gt;" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="31.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <ChoiceBox fx:id="priceToBox" layoutX="562.0" layoutY="14.0" onAction="#setPriceTo" prefHeight="23.0" prefWidth="64.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="5.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="519.0" layoutY="10.0" text="To:" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="10.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="priceFromBox" layoutX="447.0" layoutY="13.0" onAction="#setPriceFrom" prefHeight="23.0" prefWidth="63.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="5.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="399.0" layoutY="10.0" text="From:" AnchorPane.rightAnchor="208.0" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
